@@ -52,3 +52,16 @@
 # Дедлайны
 ![image](https://github.com/user-attachments/assets/8b3e576c-54e6-41a2-8489-56248b3a1795)
 
+# Этапы разработки
+1. Этап создание API (сервера)
+# 1 Этап создание API (сервера)
+Начало создание сервера я начал с создания проекта на Spring Boot
+![image](https://github.com/user-attachments/assets/525bded8-674d-47eb-b2ee-98e2c7c8191d)
+В первый день я создал сущности User, Transaction, Category, настроил pom и сам проект.
+![image](https://github.com/user-attachments/assets/ca81b06f-de32-47ab-9f83-b047bed8aa3f)
+Так же для user создал Сервис и Контроллер. Проверил всё с помощью Postman и смог залогиниться в БД (почему-то без подгрузки)
+![image](https://github.com/user-attachments/assets/17e1cc71-8bce-44ac-b2ee-27bccaf1eadc)
+![image](https://github.com/user-attachments/assets/ee55a0b2-a566-43be-8e9e-5d02e891a2f4)
+![image](https://github.com/user-attachments/assets/18b1f89e-8184-44b6-a995-4e198f0c3cca)
+
+
