@@ -59,6 +59,7 @@
 ![image](https://github.com/user-attachments/assets/525bded8-674d-47eb-b2ee-98e2c7c8191d)
 В первый день я создал сущности User, Transaction, Category, настроил pom и сам проект.
 ![image](https://github.com/user-attachments/assets/ca81b06f-de32-47ab-9f83-b047bed8aa3f)
+
 Так же для user создал Сервис и Контроллер. Проверил всё с помощью Postman и смог залогиниться в БД (почему-то без подгрузки)
 ![image](https://github.com/user-attachments/assets/17e1cc71-8bce-44ac-b2ee-27bccaf1eadc)
 ![image](https://github.com/user-attachments/assets/ee55a0b2-a566-43be-8e9e-5d02e891a2f4)
