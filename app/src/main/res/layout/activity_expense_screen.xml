@@ -22,7 +22,7 @@
         android:id="@+id/appLogo"
         android:layout_width="99dp"
         android:layout_height="100dp"
-        android:src="@drawable/svin"
+        android:src="@drawable/svin2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,14 +142,14 @@
 
     <TextView
         android:id="@+id/categoryTextView9"
-        android:layout_width="56dp"
-        android:layout_height="22dp"
+        android:layout_width="87dp"
+        android:layout_height="27dp"
         android:fontFamily="@font/inika"
-        android:text="Другое"
+        android:text="Остальное"
         android:textColor="#886352"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.857" />
