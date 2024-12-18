@@ -69,7 +69,36 @@
             app:layout_constraintHorizontal_bias="0.649"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.505" />
+            app:layout_constraintVertical_bias="0.45" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="189dp"
+            android:layout_height="27dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.652"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.809"
+            app:srcCompat="@drawable/blokdescrip" />
+
+        <EditText
+            android:id="@+id/descripEditText2"
+            android:layout_width="157dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Введите описание"
+            android:inputType="text"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.612"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
