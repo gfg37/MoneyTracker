@@ -21,5 +21,11 @@ class BetweenScreen : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val backButtonCategory5: ImageButton = findViewById(R.id.backButtonCategory5)
+        backButtonCategory5.setOnClickListener {
+            val intent = Intent(this, MainScreen::class.java)
+            startActivity(intent)
+        }
+
     }
 }
