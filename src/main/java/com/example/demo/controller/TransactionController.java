@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.module.Transaction;
 import com.example.demo.services.TransactionService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -46,4 +47,21 @@ public class TransactionController {
         Transaction createdTransaction = transactionService.createTransaction(transaction);
         return new ResponseEntity<>(createdTransaction, HttpStatus.CREATED);
     }
+
+    @GetMapping("/balance/{userId}")
+    public ResponseEntity<Double> getUserBalance(@PathVariable Long userId) {
+        Double balance = transactionService.getUserBalance(userId);
+        return new ResponseEntity<>(balance, HttpStatus.OK);
+    }
+
+    @RestController
+    @RequestMapping("/analytics")
+    public class AnalyticsController {
+
+
+    }
+
+
+
+
 }

@@ -2,6 +2,7 @@ package com.example.demo.services;
 
 import com.example.demo.module.Transaction;
 import com.example.demo.repository.TransactionRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,11 +18,12 @@ public class TransactionService {
     }
 
     public Transaction createTransaction(Transaction transaction) {
-        if (transaction.getAmount() == null || transaction.getAmount() <= 0) {
-            throw new IllegalArgumentException("Transaction amount must be positive");
+        if (transaction.getAmount() == null) {
+            throw new IllegalArgumentException("Transaction amount must not be null");
         }
         return transactionRepository.save(transaction);
     }
+
 
     public List<Transaction> getAllTransactions() {
         return transactionRepository.findAll();
@@ -31,4 +33,14 @@ public class TransactionService {
         Optional<Transaction> transaction = transactionRepository.findById(id);
         return transaction.orElse(null);  // Возвращаем null, если транзакция не найдена
     }
+
+    public Double getUserBalance(Long userId) {
+        Double balance = transactionRepository.calculateBalanceByUserId(userId);
+        return balance != null ? balance : 0.0; // Возвращаем 0.0, если транзакций нет
+    }
+
+
+
+
+
 }

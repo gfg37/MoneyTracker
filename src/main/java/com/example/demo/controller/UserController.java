@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.config.AuthenticationRequest;
 import com.example.demo.services.UserService;
 import com.example.demo.module.User;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +28,21 @@ public class UserController {
         return ResponseEntity.ok(userService.findById(id));
     }
 
+    @PostMapping("/authenticate")
+    public ResponseEntity<User> authenticate(@RequestBody AuthenticationRequest request) {
+        User authenticatedUser = userService.authenticate(request.getUsername(), request.getPassword());
+        return ResponseEntity.ok(authenticatedUser);
+    }
 
+
+    @GetMapping("/by-username/{username}")
+    public ResponseEntity<User> getUserByUsername(@PathVariable String username) {
+        User user = userService.findByUsername(username);
+        if (user == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(user);
+    }
 
 
 }
